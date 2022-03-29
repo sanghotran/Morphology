@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 # Đọc ảnh và xử lý ảnh ( biến ảnh màu thành ảnh nhị phân)
-img1 = cv2.imread('picture/lena.jpg', cv2.IMREAD_GRAYSCALE)
+img1 = cv2.imread('picture/basic.jpg', cv2.IMREAD_GRAYSCALE)
 img = cv2.resize(img1, (300, 300))
 r,img = cv2.threshold(img, 128, 255, cv2.THRESH_OTSU)
 cv2.imshow("Original", img)

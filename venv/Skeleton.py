@@ -1,7 +1,8 @@
 import cv2
 import numpy as np
 
-img = cv2.imread('picture/city.jpg', cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('picture/dog.png', cv2.IMREAD_GRAYSCALE)
+img = cv2.resize(img, (300, 300))
 thresh,img1 = cv2.threshold(img, 128, 255, cv2.THRESH_OTSU)
 
 skelimg = np.zeros(img.shape, np.uint8)

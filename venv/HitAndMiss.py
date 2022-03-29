@@ -1,7 +1,8 @@
 import cv2
 import numpy as np
 
-img = cv2.imread('picture/city.jpg', cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('picture/man.jpg', cv2.IMREAD_GRAYSCALE)
+img = cv2.resize(img, (300, 300))
 
 kernel1 = np.array((
         [0, 1, 0],
